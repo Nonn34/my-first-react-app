@@ -23,3 +23,7 @@ header {
   border-color: black;
   font-size: 30px;
 }
+
+.navbarbutton:hover {
+  background-color: white;
+}
