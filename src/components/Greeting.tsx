@@ -7,6 +7,9 @@ const Greeting = () => {
         <i>Hello !</i>
       </h1>
       <br />
+      <p>&#11088;&#11088;&#11088;</p>
+      <br />
+      <br />
       <button>
         <i>
           <mark>
