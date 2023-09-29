@@ -2,17 +2,6 @@
   font-family: sans-serif;
 }
 
-.bodybutton {
-  background-color: #1ac940;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 25px;
-  width: 250px;
-  height: 100px;
-  box-shadow: 0 0 10px 5px burlywood;
-  font-size: 200%;
-}
-
 h1 {
   color: rgb(0, 0, 34);
   text-shadow: 2px 2px whitesmoke;
