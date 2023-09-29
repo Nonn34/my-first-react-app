@@ -18,7 +18,7 @@ function App() {
       </div>
       <h1>
         <i>
-          Welcome !<b>Nonn</b>
+          Welcome !<mark> Nonn </mark>
         </i>
       </h1>
       <div className="card">
