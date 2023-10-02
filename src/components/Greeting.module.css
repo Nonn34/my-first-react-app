@@ -11,3 +11,9 @@ h1 {
 p {
   font-size: 30px;
 }
+
+p:hover {
+  color: transparent;
+  text-shadow: 0 0 0 orange;
+  cursor: pointer;
+}

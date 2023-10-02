@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Greeting />
+      <Greeting hello="สวัสดี นี่ไม่ใช่ Default" />
     </div>
   )
 }
