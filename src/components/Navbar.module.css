@@ -20,7 +20,7 @@ header {
 header:hover {
   color: yellow;
   background-size: 100px;
-  cursor: pointer;
+  cursor: grab;
 }
 
 button {
