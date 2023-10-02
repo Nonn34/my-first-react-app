@@ -1,21 +1,24 @@
 import classes from './Greeting.module.css'
 
-const Greeting = () => {
+interface greetingTo {
+  hello?: string
+}
+
+const Greeting = ({ hello = 'ส วั ส ดี ส วี ดั ส' }: greetingTo) => {
   return (
     <div className={classes.test}>
       <body>
-        <p>&#11088;&#11088;&#11088;&#11088;</p>
-        <p>&#11088;&#11088;&#11088;</p>
-        <p>&#11088;&#11088;</p>
-        <p>&#11088;</p>
+        <p className={classes.star}>&#11088;&#11088;&#11088;&#11088;</p>
+        <p className={classes.star}>&#11088;&#11088;&#11088;</p>
+        <p className={classes.star}>&#11088;&#11088;</p>
+        <p className={classes.star}>&#11088;</p>
         <h1>
-          <i>ส วั ส ดี ส วี ดั ส</i>
+          <i>{hello}</i>
         </h1>
-        <p>&#11088;</p>
-        <p>&#11088;&#11088;</p>
-        <p>&#11088;&#11088;&#11088;</p>
-        <p>&#11088;&#11088;&#11088;&#11088;</p>
-        <br />
+        <p className={classes.star}>&#11088;</p>
+        <p className={classes.star}>&#11088;&#11088;</p>
+        <p className={classes.star}>&#11088;&#11088;&#11088;</p>
+        <p className={classes.star}>&#11088;&#11088;&#11088;&#11088;</p>
       </body>
     </div>
   )

@@ -1,16 +1,7 @@
 .test {
   font-family: sans-serif;
-}
-
-.bodybutton {
-  background-color: #1ac940;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 25px;
-  width: 250px;
-  height: 100px;
-  box-shadow: 0 0 10px 5px burlywood;
-  font-size: 200%;
+  height: 50px;
+  width: auto;
 }
 
 h1 {
@@ -19,6 +10,18 @@ h1 {
   font-size: 40px;
 }
 
+h1:hover {
+  color: white;
+  text-shadow: 0 0 0 black;
+  cursor: cell;
+}
+
 p {
   font-size: 30px;
+}
+
+.star:hover {
+  color: transparent;
+  text-shadow: 0 0 0 orange;
+  cursor: grabbing;
 }

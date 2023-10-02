@@ -9,7 +9,9 @@ const Navbar = () => {
           <b>my website</b>
         </i>
       </header>
-      <button className={classes.navbarbutton}>Login</button>
+      <button type="button" className={classes.navbarbutton}>
+        Login
+      </button>
     </div>
   )
 }

@@ -17,13 +17,20 @@ header {
   font-size: 50px;
 }
 
-.navbarbutton {
+header:hover {
+  color: yellow;
+  background-size: 100px;
+  cursor: grab;
+}
+
+button {
   width: 250px;
   height: 80px;
   border-color: black;
   font-size: 30px;
 }
 
-.navbarbutton:hover {
-  background-color: white;
+button:hover {
+  background-color: greenyellow;
+  cursor: pointer;
 }
