@@ -1,5 +1,7 @@
 .test {
   font-family: sans-serif;
+  height: 50px;
+  width: auto;
 }
 
 h1 {
