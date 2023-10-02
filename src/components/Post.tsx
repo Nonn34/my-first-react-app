@@ -11,10 +11,14 @@ const Post = ({ post }: postProps) => {
   }
   return (
     <div onClick={() => handleClick(post.userId)} className={classes.post}>
-      <p>ความคิดเห็นที่ {post.id}:</p>
+      <p>
+        <b>ความคิดเห็นที่ {post.id}</b>:
+      </p>
       <p>คุณ {post.userId} ได้โพสต์ว่า :</p>
       {/* <p>{post.title}</p>  */}
-      <p>{post.body}</p>
+      <p>
+        <i>{post.body}</i>
+      </p>
     </div>
   )
 }
