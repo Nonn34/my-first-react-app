@@ -8,11 +8,17 @@ h1 {
   font-size: 40px;
 }
 
+h1:hover {
+  color: white;
+  text-shadow: 0 0 0 black;
+  cursor: pointer;
+}
+
 p {
   font-size: 30px;
 }
 
-p:hover {
+.star:hover {
   color: transparent;
   text-shadow: 0 0 0 orange;
   cursor: pointer;
