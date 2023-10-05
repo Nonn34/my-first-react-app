@@ -34,3 +34,18 @@ button:hover {
   background-color: greenyellow;
   cursor: pointer;
 }
+
+.inactive {
+  text-decoration: none;
+}
+
+.active {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h1:hover {
+  color: greenyellow;
+  cursor: pointer;
+}

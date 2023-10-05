@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { CreatePostDTO, PostDTO } from '../../types/dto'
+import { CreatePostDTO, PostDTO } from '../types/dto'
 import axios from 'axios'
 
 const usePosts = () => {
