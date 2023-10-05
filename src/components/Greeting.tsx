@@ -2,6 +2,7 @@ import classes from './Greeting.module.css'
 
 interface greetingTo {
   hello?: string
+  isLoggedIn: boolean
 }
 
 const Greeting = ({ hello = 'ส วั ส ดี ส วี ดั ส' }: greetingTo) => {
