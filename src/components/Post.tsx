@@ -7,7 +7,7 @@ interface postProps {
 
 const Post = ({ post }: postProps) => {
   const handleClick = (userId: string) => {
-    alert(`ติดต่อ ${userId} ไม่ได้`)
+    alert(`ติดต่อ คุณ ${userId} ไม่ได้`)
   }
   return (
     <div onClick={() => handleClick(post.userId)} className={classes.post}>
