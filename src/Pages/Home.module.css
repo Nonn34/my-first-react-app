@@ -3,11 +3,12 @@
   flex-direction: row;
   align-items: center;
   gap: 30px;
+  box-sizing: border-box;
 }
 
 h2 {
   display: flex;
-  background-color: pink;
+  background-color: rgb(240, 83, 187);
   align-items: center;
   border-radius: 6px;
   padding: 10px 8px;
@@ -16,8 +17,14 @@ h2 {
 .feedContainer {
   display: flex;
   flex-direction: row;
-  max-width: 800px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
   width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 .postForm {
@@ -32,5 +39,7 @@ h2 {
 }
 
 h2:hover {
+  cursor: default;
   font-size: xx-large;
+  background-color: pink;
 }
