@@ -1,13 +1,21 @@
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 30px;
 }
 
+h2 {
+  display: flex;
+  background-color: pink;
+  align-items: center;
+  border-radius: 6px;
+  padding: 10px 8px;
+}
+
 .feedContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   max-width: 800px;
   width: 100%;
 }
