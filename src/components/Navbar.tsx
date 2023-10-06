@@ -1,7 +1,12 @@
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import classes from './Navbar.module.css'
+import { useAuth } from '../providers/AuthProvider'
 
 const Navbar = () => {
+  const { isLoggedIn } = useAuth()
+
+  console.log('from navbar:', isLoggedIn)
+
   return (
     <div className={classes.test2}>
       <header>
@@ -25,8 +30,10 @@ const Navbar = () => {
           <h1>โปรไฟล์ของคุณ</h1>
         </NavLink>
       </div>
-      <button type="button" className={classes.navbarbutton}>
-        Login
+      <button>
+        <Link to="/login" className={classes.navbarbutton}>
+          Login
+        </Link>
       </button>
     </div>
   )

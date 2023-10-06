@@ -29,12 +29,12 @@ h2 {
 
 .postForm {
   display: flex;
-  flex-direction: column;
-  width: max-content;
-  height: auto;
-  background-color: #c8c8c8;
-  padding: 10px 8px;
-  border-radius: 6px;
+  flex-direction: row;
+  width: auto;
+  height: max-content;
+  background-color: #8526e4;
+  padding: 100px 395px;
+  border-radius: 5px;
   gap: 5px;
 }
 
