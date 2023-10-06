@@ -8,6 +8,7 @@ const Profile = () => {
           <b>หน้านี้ คือ หน้าเฉพาะของคุณ</b>
         </big>
       </p>
+      <img src="https://th.bing.com/th/id/OIP.XtAUsrvYUqSD1DRZIYBnEAAAAA" />
     </div>
   )
 }

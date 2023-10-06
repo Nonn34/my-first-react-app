@@ -49,3 +49,7 @@ h1:hover {
   color: greenyellow;
   cursor: pointer;
 }
+
+.navbarbutton {
+  text-decoration: none;
+}

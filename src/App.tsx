@@ -5,6 +5,7 @@ import Home from './Pages/Home'
 import Profile from './Pages/Profile'
 import NewPost from './Pages/NewPost'
 import PostDetail from './Pages/PostDetail'
+import Login from './Pages/Login'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/newpost" element={<NewPost />} />
         <Route path="/post/:id" element={<PostDetail />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </div>
   )
