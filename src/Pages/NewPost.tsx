@@ -26,9 +26,9 @@ const NewPost = () => {
     <div className={classes.container}>
       <form className={classes.postForm} onSubmit={handleSubmit}>
         <label>ชื่อหัวข้อ</label>
-        <input type="text" value={newTitle} onChange={(e) => setNewTitle(e.target.value)} required />
+        <input size="20" type="text" value={newTitle} onChange={(e) => setNewTitle(e.target.value)} required />
         <label>เนื้อหา</label>
-        <input type="text" value={newBody} onChange={(e) => setNewBody(e.target.value)} required />
+        <input size="50" type="text" value={newBody} onChange={(e) => setNewBody(e.target.value)} required />
 
         <button type="submit" disabled={isSubmitting}>
           {isSubmitting ? 'โปรดรอสักครู่...' : 'ยืนยัน'}

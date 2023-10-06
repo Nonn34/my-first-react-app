@@ -9,6 +9,8 @@ interface IAuthProviderProps {
 interface IAuthContextType {
   isLoggedIn: boolean
   login: (username: string, password: string) => Promise<void>
+  username: string | null
+  logout: () => void
 }
 
 const AuthContext = createContext<IAuthContextType | null>(null)
@@ -22,8 +24,12 @@ export const useAuth = () => {
   return context
 }
 
+const token = localStorage.getItem('token')
+const user = localStorage.getItem('username')
+
 const AuthProvider = ({ children }: IAuthProviderProps) => {
-  const [isLoggedIn, setIsLoggedin] = useState<boolean>(false)
+  const [isLoggedIn, setIsLoggedin] = useState<boolean>(!!token)
+  const [username, setUsername] = useState<string | null>(user)
 
   const login = async (username: string, password: string) => {
     const loginBody: LoginDTO = { username, password }
@@ -33,13 +39,20 @@ const AuthProvider = ({ children }: IAuthProviderProps) => {
         headers: { 'Content-Type': 'application/json' },
       })
 
-      console.log(res.data)
+      localStorage.setItem('token', res.data.accessToken)
+      setIsLoggedin(true)
+      setUsername(username)
     } catch (err) {
       throw new Error('Invalid username or password')
     }
   }
 
-  return <AuthContext.Provider value={{ isLoggedIn, login }}>{children}</AuthContext.Provider>
+  const logout = () => {
+    localStorage.clear()
+    setIsLoggedin(false)
+  }
+
+  return <AuthContext.Provider value={{ isLoggedIn, login, username, logout }}>{children}</AuthContext.Provider>
 }
 
 export default AuthProvider
